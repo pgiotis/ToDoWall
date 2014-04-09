@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ToDoWall</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/tdw.css" rel="stylesheet">
+
+        <!-- Le javascript -->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/tdw.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Title"
+                           id="InputTitle">
+                    <input type="text" class="form-control" placeholder="Description"
+                           id="InputDescription">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" onclick="add()">Add</button>
+                        <button class="btn btn-info" type="button" onclick="save()">Save</button>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <!--TODO items-->
+                <div class="col-md-3">
+
+                    <div class="page-header">
+                        <h3 class="text-center"><b>TODO:</b></h3>
+                    </div>
+
+                    <div class="area list-group"   ondrop="drop(event)" 
+                         ondragover="allowDrop(event)">
+                        <h5 class="text-center drag" id="todo">~ Drag here ~</h5></div>
+                </div>
+
+
+                <!--WIP and testing items-->
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="page-header">
+                            <h3 class="text-center"><b>W.I.P.</b></h3>
+                        </div>
+
+                        <div class="area list-group" ondrop="drop(event)" 
+                             ondragover="allowDrop(event)">
+                            <h5 class="text-center drag" id="wip">~ Drag here ~</h5></div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="page-header">
+                            <h3 class="text-center"><b>Testing:</b></h3>
+                        </div>
+
+                        <div class="area list-group" ondrop="drop(event)" 
+                             ondragover="allowDrop(event)">
+                            <h5 class="text-center drag" id="testing">~ Drag here ~</h5></div>
+                    </div>
+                </div>
+
+                <!--Done items-->
+                <div class="col-md-3">
+                    <div class="page-header">
+                        <h3 class="text-center"><b>DONE:</b></h3>
+                    </div>
+
+                    <div class="area list-group" ondrop="drop(event)" 
+                         ondragover="allowDrop(event)">
+                        <h5 class="text-center drag"  id="done">~ Drag here ~</h5></div>
+                </div>
+            </div>
+        </div> <!-- /container -->
+        <script>load();</script>
+    </body>
+</html>

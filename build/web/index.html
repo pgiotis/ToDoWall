@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ToDoWall</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/tdw.css" rel="stylesheet">
+        <script src="./js/jquery-1.10.2.js"></script>
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/tdw.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form-signin" action="home.html" method="post">
+                
+                <h2 class="form-signin-heading">Please Login</h2>
+               
+                <input type="text" class="form-control" placeholder="Username" id="Username" autofocus>
+                <input type="password" class="form-control" placeholder="Password" id="Password">
+               
+                <button class="btn btn-lg btn-primary btn-block"  style="display:none" type="submit" id="hiddenButton">Login</button>
+                <a class="btn btn-lg btn-primary btn-block" onclick="checkLogin();">Login</a>
+                <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="btn btn-lg btn-default btn-block">Register</a>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Register</h4>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control" placeholder="Username" id="RegisterUsername" autofocus>
+                                <input type="password" class="form-control" placeholder="Password" id="RegisterPassword">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="register();">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /Modal -->
+            </form>
+        </div> <!-- /container -->
+    </body>
+</html>

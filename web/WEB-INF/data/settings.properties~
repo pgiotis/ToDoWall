@@ -1,0 +1,9 @@
+DBurl=jdbc:mysql://localhost/ProfileService?useUnicode=true&characterEncoding=UTF-8
+PServerClientUsername=c2learn
+DBusername=profileservice
+PServerPort=1111
+PServerTimeout=1000
+PServerClientPassword=learn123456
+PServerPost=true
+DBpassword=ps12345
+PServerURL=127.0.1.1
