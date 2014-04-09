@@ -2,4 +2,4 @@ ToDoWall
 ========
 
 
-ToDO management tool
+To-Do Lists: Online Tool for Organizing Your Tasks
